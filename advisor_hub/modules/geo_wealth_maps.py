@@ -8,7 +8,7 @@ def render_geo_wealth_module(df=None):
     Renderiza o módulo de inteligência geográfica. 
     Se o df não for passado pelo app.py, ele busca direto no backend_engine.
     """
-    st.title("💎 GeoWealth Intelligence: Prospecção de Elite")
+    st.title("💎 GeoWealth Intelligence: Prospecção")
     st.markdown("---")
 
     # 1. Garantir que os dados existam antes de qualquer visualização
@@ -82,4 +82,5 @@ def render_geo_wealth_module(df=None):
         df[['Estado', 'Renda_Media', 'Publico_Alvo', 'Janela_Liquidez', 'Dor_Principal']], 
         use_container_width=True,
         hide_index=True
+
     )
