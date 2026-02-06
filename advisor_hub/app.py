@@ -9,6 +9,8 @@ st.set_page_config(page_title="Advisor Terminal", layout="wide", page_icon="💎
 
 # Sidebar
 st.sidebar.title("💎 Advisor Hub")
+st.sidebar.write("Inteligência aplicada à prospecção")
+st.write("Você no comando, prospectando com inteligência e estratégia.")
 menu = st.sidebar.radio("Navegação", ["GeoWealth", "Simulador", "Comparador", "Pipe Estratégico"])
 
 # Carregamos o dado uma única vez aqui para evitar erros de variável local
@@ -21,4 +23,5 @@ elif menu == "Simulador":
 elif menu == "Comparador":
     render_credit_analyzer()
 elif menu == "Pipe Estratégico":
+
     render_prospect_manager(df_principal)    
