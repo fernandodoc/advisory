@@ -1,0 +1,57 @@
+Prospecção Inteligente
+
+pib/
+|__app.py
+|__backend_engine.py
+|__modules/
+    |__ __init__.py
+    |__geo_wealth_maps.py
+        |__mapa de concentração de capital
+        |__estratégia de abordagem
+            |__selecionar o Estado para detalhes
+            |__melhor época
+            |__dor do cliente
+            |__renda média
+            |__bairros, áreas nobres, condomínios fechados (abrindo no Google Maps)
+            |__filtro por região
+                |__potencial de captação
+                |__público alvo
+                |__localização
+                |__foco (clientes)
+            |__conselhos regionais, conselhos federais, organizações de classe, sindicatos
+            |__ranking de potencial
+                |__Estado
+                |__renda média
+                |__público alvo
+                |__janela de liquidez
+                |__dor principal
+    |__wealth_calculator.py
+       |__o impacto da gestão de elite
+       |__simulação
+          |__patrimônio inicial
+          |__aporte mensal
+          |__prazo de simulação (anos)
+        |__cenário A - Bancos
+           |__taxa média (administração + custódia) a.a.
+        |__cenário B - Assessoria de elite
+           |__taxa de gestão
+        |__projeção de acúmulo de patrimônio (assessoria de elite, banco)
+           |__diferença após 10 anos
+           |__ver detalhamento anual comparando cenário A (banco) e B (assessoria de elite)
+    |__credit_analyzer.py
+       |__dados do bem (valor do bem, prazo)
+       |__financiamento SAC (taxa de juros anual)
+       |__consórcio (Taxa de Adm. Total (%), Lance Embutido (%), Prazo (meses))
+       |__investimentos (Rentabilidade da Carteira (% a.a.))
+       |__comparativo gráfico (custo total SAC vs consórcio vs investimento)
+       |__veridito final
+       |__explicação para o cliente
+       |__finalização da consultoria
+          |__gerar proposta para whatsapp
+          |__enviar direto para whatsapp (digitar whatsapp do cliente)
+    |__prospect_manager.py (gestão de prospecção)
+       |__ # Gerador de Script baseado na "Dor"
+       |__ # Cria a estrutura inicial para inserir os dados do lead na base de dados no ficheiro CSV
+       |__ # Filtros rápidos na visualização
+
+
